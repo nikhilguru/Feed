@@ -58,11 +58,12 @@ class HomeActivity : AppCompatActivity(), HomeContract.HomeView {
 
     private fun setAdapter(feedRespose: FeedRespose?) {
 
-
         val linearLayoutManager = LinearLayoutManager(this)
         rvFeed.layoutManager = linearLayoutManager
         rvFeed.adapter = feedRespose?.rows?.let { FeedAdapter(this, it) }
 
     }
+
+
 
 }
